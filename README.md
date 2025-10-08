@@ -29,3 +29,5 @@ Cada filme contém título, gênero, nota e capa personalizada, tudo salvo no **
 
 ---
 
+![Imagem CinePick ](https://github.com/moisesvinicius404/CinePick/blob/main/imagem-cinePick.png)
+
