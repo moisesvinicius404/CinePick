@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CinePick</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="scrip.js" defer></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-6">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-6 text-yellow-400">🎥 CinePick</h1>
+
+    <form id="movieForm" class="flex flex-wrap gap-2 mb-6 justify-center items-center">
+      <label for="cover" class="cursor-pointer w-10 h-10 flex items-center justify-center bg-yellow-500 text-white rounded-full hover:bg-yellow-600">
+        <span class="text-2xl font-bold">+</span>
+      </label>
+      <input type="file" id="cover" accept="image/*" class="hidden">
+      <input id="title" placeholder="Título" class="p-2 rounded-lg text-black w-40">
+      <input id="genre" placeholder="Gênero" class="p-2 rounded-lg text-black w-32">
+      <input id="rating" type="number" min="0" max="10" placeholder="Nota" class="p-2 rounded-lg text-black w-24">
+      <button type="submit" class="bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-600">Adicionar</button>
+    </form>
+
+
+    <div id="movieList" class="grid md:grid-cols-3 sm:grid-cols-2 gap-4"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
